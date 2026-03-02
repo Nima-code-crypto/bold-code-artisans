@@ -75,7 +75,8 @@ const Services = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={cardVariants}
-              className="glass-card p-4 md:p-8 group hover:border-primary/30 transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.15)]"
+              whileHover={{ scale: 1.04, y: -6 }}
+              className="glass-card p-4 md:p-8 group hover:border-primary/30 transition-colors duration-300 hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.25)] cursor-pointer"
             >
               <div className="w-9 h-9 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-5 group-hover:bg-primary/20 transition-colors">
                 <service.icon size={18} className="text-primary md:hidden" />
