@@ -66,22 +66,23 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
               custom={i}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               variants={cardVariants}
-              className="glass-card p-8 group hover:border-primary/30 transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.15)]"
+              className="glass-card p-4 md:p-8 group hover:border-primary/30 transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.15)]"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <service.icon size={22} className="text-primary" />
+              <div className="w-9 h-9 md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-5 group-hover:bg-primary/20 transition-colors">
+                <service.icon size={18} className="text-primary md:hidden" />
+                <service.icon size={22} className="text-primary hidden md:block" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">
+              <h3 className="text-sm md:text-xl font-semibold mb-1 md:mb-3">{service.title}</h3>
+              <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">
                 {service.description}
               </p>
             </motion.div>
