@@ -16,10 +16,10 @@ const Contact = () => {
           <span className="text-primary font-mono text-sm tracking-wider uppercase mb-4 block">
             Kontakt
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6">
             Redo att <span className="gradient-text">komma igång?</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-xl mx-auto mb-6 md:mb-10">
             Berätta om ditt projekt så återkommer vi inom 24 timmar. 
             Ingen förpliktelse – bara ett ärligt samtal om hur vi kan hjälpa dig.
           </p>
@@ -34,14 +34,14 @@ const Contact = () => {
         >
           <a
             href="mailto:kontakt@nimab.dev"
-            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl text-base font-semibold hover:opacity-90 transition-all group"
+            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 md:px-8 md:py-4 rounded-xl text-sm md:text-base font-semibold hover:opacity-90 transition-all group"
           >
             <Mail size={18} />
             kontakt@nimab.dev
           </a>
           <a
             href="#services"
-            className="inline-flex items-center justify-center gap-2 border border-border bg-secondary/30 text-foreground px-8 py-4 rounded-xl text-base font-semibold hover:bg-secondary/60 transition-colors group"
+            className="inline-flex items-center justify-center gap-2 border border-border bg-secondary/30 text-foreground px-6 py-3 md:px-8 md:py-4 rounded-xl text-sm md:text-base font-semibold hover:bg-secondary/60 transition-colors group"
           >
             Utforska tjänster
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-0.5" />

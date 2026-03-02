@@ -57,11 +57,11 @@ const Services = () => {
           <span className="text-primary font-mono text-sm tracking-wider uppercase mb-4 block">
             Tjänster
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-2xl md:text-5xl font-bold tracking-tight mb-4">
             Allt du behöver för att{" "}
             <span className="gradient-text">lyckas digitalt</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto">
             Vi erbjuder ett komplett utbud av utvecklingstjänster anpassade efter dina behov.
           </p>
         </motion.div>

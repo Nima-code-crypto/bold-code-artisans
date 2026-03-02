@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section id="about" className="section-padding">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -24,16 +24,16 @@ const About = () => {
             <span className="text-primary font-mono text-sm tracking-wider uppercase mb-4 block">
               Om Nimab
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+            <h2 className="text-2xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6">
               Din partner för{" "}
               <span className="gradient-text">digital framgång</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+            <p className="text-muted-foreground text-sm md:text-lg leading-relaxed mb-4 md:mb-6">
               Nimab Development är ett teknikfokuserat utvecklingsbolag som hjälper 
               företag att ta steget in i det digitala. Vi kombinerar teknisk spetskompetens 
               med affärsförståelse för att skapa lösningar som faktiskt gör skillnad.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-muted-foreground text-sm md:text-lg leading-relaxed">
               Med ett starkt driv och ett genuint intresse för modern webbutveckling 
               levererar vi projekt som inte bara ser bra ut – utan som presterar.
             </p>
@@ -44,10 +44,10 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="glass-card p-8 md:p-10"
+            className="glass-card p-5 md:p-10"
           >
-            <h3 className="text-xl font-semibold mb-6">Varför Nimab?</h3>
-            <div className="space-y-4">
+            <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Varför Nimab?</h3>
+            <div className="space-y-3 md:space-y-4">
               {reasons.map((reason, i) => (
                 <motion.div
                   key={i}
